@@ -1,0 +1,14 @@
+{
+    "options" : {
+        "greeting": {
+            "world" : "Bonjour le monde !"
+        },
+        "start_button": "Commencer",
+        "exit_button": "Quitter"
+    },
+    "menu" : {
+        "greeting": "Bonjour",
+        "start_button": "Commencer",
+        "exit_button": "Quitter"
+    }
+}
