@@ -1,5 +1,9 @@
+local Debug = require("/Scenes/DebugScene")
 local Menu = require("/Scenes/MenuScene")
 local Game = require("/Scenes/GameScene")
+local Pause = require("/Scenes/PauseScene")
+local GameOver = require("/Scenes/GameOverScene")
+local Victory = require("/Scenes/VictoryScene")
 
 local SceneManager = {}
 
@@ -14,8 +18,13 @@ function SceneManager:new()
 end
 
 function SceneManager:load()
+    self.lstScene["Debug"] = Debug:new()
     self.lstScene["Menu"] = Menu:new()
     self.lstScene["Game"] = Game:new()
+    self.lstScene["Pause"] = Pause:new()
+    self.lstScene["GameOver"] = GameOver:new()
+    self.lstScene["Victory"] = Victory:new()
+
 
     self.currentScene = self.lstScene["Menu"]
 end
